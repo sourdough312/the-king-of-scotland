@@ -1,0 +1,86 @@
+/* fonts */
+@font-face {
+  font-family: 'blackflag';
+  src: url('fonts/BlackFlag.woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'deutsche';
+  src: url('fonts/DeutscheZierschrift.woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'fleshwound';
+  src: url('fonts/Flesh\ Wound.woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gothicpunk';
+  src: url('fonts/Gothic\ Punk.woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gothical';
+  src: url('fonts/Gothical.woff2');
+  font-display: swap;
+}
+
+/* BODY */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* nav bar */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #000000;
+  padding: 20px;
+}
+
+
+
+.menu a {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'gothical';
+  font-size: 40px;
+}
+
+.menu a:hover {
+  font-family: 'gothicpunk';
+  font-size: 20px;
+  padding-bottom: 0%;
+}
+
+.menu a.active {
+  color: rgb(255, 0, 0);
+}
+
+
+.banner {
+  display: flex;
+  justify-content: center;
+  background: #101010;
+}
+
+.banner img {
+  max-height: 300px;
+  width: auto;
+}
+
+/* PHONE SIZE */
+@media (max-width: 480px) {
+  .menu {
+
+  }
+}
