@@ -1,4 +1,7 @@
 /* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 @font-face {
   font-family: 'blackflag';
   src: url('fonts/BlackFlag.woff2');
@@ -42,16 +45,16 @@ html, body {
   display: flex;
   justify-content: center;
   gap: 30px;
-  background: #000000;
+  background: rgb(101, 0, 0);
   padding: 20px;
+  position: sticky;
+  top: 0;
 }
-
-
 
 .menu a {
   position: relative;
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   font-family: 'gothical';
   font-size: 40px;
 }
@@ -63,8 +66,9 @@ html, body {
 }
 
 .menu a.active {
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
 }
+
 
 
 .banner {
@@ -76,6 +80,68 @@ html, body {
 .banner img {
   max-height: 300px;
   width: auto;
+}
+
+/* 
+
+HOME PAGE!!!!!!!!!!! 
+
+*/
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #101010;
+  color: #ffffff;
+}
+
+.intro__header {
+  color: red;
+  font-family: "blackflag", sans-serif;
+}
+
+.intro__para, .intro__para--primary {
+  font-family: 'Manufacturing Consent', sans-serif;
+  font-size: 28px;
+  margin: 0 24px;
+  text-align: center;
+  margin: 12px 24px;
+  max-width: 60vw;
+}
+
+.intro__para--primary {
+  color: red;
+}
+
+/* 
+
+IMAGE CAROUSEL
+
+*/
+
+
+
+/* 
+
+FOOTER
+
+*/
+
+footer {
+  background-color: black;
+}
+
+.footer__img--wrapper {
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__img {
+  max-height: 150px;
 }
 
 /* PHONE SIZE */
