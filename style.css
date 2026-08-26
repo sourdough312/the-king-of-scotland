@@ -1,6 +1,8 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
 
 @font-face {
   font-family: 'blackflag';
@@ -36,6 +38,16 @@
 html, body {
     margin: 0;
     padding: 0;
+}
+
+.container {
+  padding: 56px;
+}
+
+.row {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 /* 
@@ -125,6 +137,55 @@ HOME PAGE!!!!!!!!!!!
   color: red;
 }
 
+/* 
+
+CAST!!!!!!!!!!!!!!
+
+*/
+
+.cast {
+  display: flex;
+  gap: calc(100/3);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cast-member {
+  padding: 24px 15px;
+  padding-bottom: 40px;
+  flex: 1;
+}
+
+.cast-member__img--wrapper {
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.cast-member__img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.cast-member__bio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cast-member__name {
+  font-family: 'deutsche', sans-serif;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.cast-member__description {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 17px;
+}
 
 /* 
 
@@ -196,4 +257,36 @@ footer {
     flex-wrap: wrap;
     padding: 0 20px;
   }
+
+  
+}
+
+@media (max-width: 938px) {
+  .cast {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100%;
+    flex-direction: column;
+  }
+
+  .cast-member {
+    padding: 24px;
+    width: 100%;
+  }
+
+  .cast-member__img--wrapper {
+    overflow: hidden;
+  }
+
+  .cast-member__img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .cast-member__bio {
+    align-items: start;
+    
+  }
+
+
 }
