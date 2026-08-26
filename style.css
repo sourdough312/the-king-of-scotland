@@ -196,6 +196,10 @@ CAST!!!!!!!!!!!!!!
   font-size: 17px;
 }
 
+  .cast-member__description a {
+    color: #BEA9DF;
+  }
+
 /* 
 
 FOOTER
@@ -300,6 +304,7 @@ footer {
   .cast-member__description {
     font-size: 13px;
   }
+
 }
 
 @media (max-width: 550px) {
