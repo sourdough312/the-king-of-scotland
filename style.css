@@ -327,9 +327,14 @@ footer {
     height: auto;
   }
 
+  .cast-member {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .cast-member__img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
 
 }
