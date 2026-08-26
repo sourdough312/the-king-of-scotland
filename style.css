@@ -36,40 +36,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
+/* 
 
-/* nav bar */
-.menu {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  background: rgb(101, 0, 0);
-  padding: 20px;
-  position: sticky;
-  top: 0;
-}
+BANNER!!!!
 
-.menu a {
-  position: relative;
-  text-decoration: none;
-  color: white;
-  font-family: 'gothical';
-  font-size: 40px;
-}
-
-.menu a:hover {
-  font-family: 'gothicpunk';
-  font-size: 20px;
-  padding-bottom: 0%;
-}
-
-.menu a.active {
-  color: rgb(0, 0, 0);
-}
-
-
+*/
 
 .banner {
   display: flex;
@@ -80,6 +53,42 @@ html, body {
 .banner img {
   max-height: 300px;
   width: auto;
+}
+
+/* nav bar */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: calc(100%/20);
+  background: rgb(101, 0, 0);
+  padding: 20px;
+}
+
+.menu__container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgb(101, 0, 0);
+}
+
+.menu a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-family: 'gothical';
+  font-size: 40px;
+  align-items: center;
+}
+
+.menu a:hover {
+  font-family: 'gothicpunk';
+  font-size: 20px;
+  padding-bottom: 0%;
+}
+
+.menu a.active {
+  color: rgb(0, 0, 0);
 }
 
 /* 
@@ -100,6 +109,7 @@ HOME PAGE!!!!!!!!!!!
 .intro__header {
   color: red;
   font-family: "blackflag", sans-serif;
+  text-align: center;
 }
 
 .intro__para, .intro__para--primary {
@@ -114,13 +124,6 @@ HOME PAGE!!!!!!!!!!!
 .intro__para--primary {
   color: red;
 }
-
-/* 
-
-IMAGE CAROUSEL
-
-*/
-
 
 
 /* 
@@ -144,9 +147,53 @@ footer {
   max-height: 150px;
 }
 
-/* PHONE SIZE */
-@media (max-width: 480px) {
-  .menu {
 
+/* PHONE SIZE */
+@media (max-width: 550px) {
+  .menu__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    padding-top: 10px;
+    font-size: 25px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .banner img {
+    max-width: 70vw;
+    height: auto;
+  }
+
+  .menu__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: calc(100%/20);
+    justify-content: center;
+  }
+
+  .menu a {
+    font-size: 30px;
+  }
+
+  .intro {
+    flex-wrap: wrap;
+    padding: 0 20px;
   }
 }
